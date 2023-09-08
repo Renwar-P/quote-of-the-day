@@ -1,3 +1,11 @@
+"""
+The code in this project is ispired of the Love Sandwiches project, 
+https://github.com/Pelikantapeten/p3-dad-jokes/blob/main/run.py,
+https://hackr.io/blog/python-projects Number Guessing
+"""
+
+
+
 import random
 
 
@@ -14,9 +22,13 @@ quote_list = [
     'Keep your eyes on the stars, and your feet on the ground'
 ]
 
+    
+
 def welcome_quote_of_the_day():
     """
-    Function to greet and start the game
+    Function to greet and start the game,
+    This part of the code is inspired by 
+    https://github.com/Pelikantapeten/p3-dad-jokes/blob/main/run.py
     """
     print('Welcome to Quote of the Day!\n')
 
@@ -24,12 +36,15 @@ def welcome_quote_of_the_day():
 def check_input(user_input):
     """
     Function to check if input is valid
+    This part of the code is inspired by
+    https://hackr.io/blog/python-projects Number Guessing 
+
     """
     inputs_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
     if user_input in inputs_list:
         random_quote = display_random_quote()
-        print(f"\nHere's a random quote for {user_input}:")
+      
         print(random_quote)
     
     else:
