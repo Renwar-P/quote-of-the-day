@@ -9,17 +9,26 @@ def welcome_quote_of_the_day():
     print('Please enter the name of the current day')
 
 
-def check_input():
+def check_input(user_input):
     """
     Function to check if input is valid
     """
+    inputs_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
+    'Saturday', 'Sunday']
+
+    if user_input in inputs_list:
+        print(random_quote) 
+    else:
+        print('Please enter a valid weekday')
 
 
 def display_random_quote():
     """
     Function to get a random quote
     """
-  
+    random_quote = random.choice(quote_list)
+    return random_quote
+
 
 a = 'Life does not end when we die, it ends when we give up'
 b = 'All our dreams can come true, if we have the courage to pursue them'
