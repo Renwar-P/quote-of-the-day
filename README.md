@@ -1,16 +1,18 @@
 # Quote of the Day
 
-Do you feel down sometimes? Need some motivation? Try the "Quote of the Day" service. 
-Enter the name of today and see what will be your quote of the day. The purpose behind it is to make someones day a bit brighter. 
+Do you feel down sometimes? Need some motivation? Try the "Quote of the Day" game. 
+Enter the name of today and see what luck will have you and deliver your quote of the day. The purpose behind it is to make someones day a bit brighter. 
+
+The link to my deployed app is https://the-quote-of-the-day-fd2e776429ce.herokuapp.com/
 
 
-  <img src="" alt="a image of the sites pages on different sizes">
+  <img src="images/responsive.png" alt="a image of the sites pages on different sizes">
 
 ## How to play
 
 When entering the game it will greet you with "Welcome to the Quote of the Day". 
 
-When starting the service it will ask you for the name of today. 
+When starting the game it will ask you for the name of today. 
 
 Enter the name of today and a random quote will appear on screen.  
 
