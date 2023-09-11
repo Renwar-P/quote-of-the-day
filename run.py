@@ -1,13 +1,11 @@
 """
-The code in this project is ispired of the Love Sandwiches project, 
+The code in this project is inspired of the Love Sandwiches project, 
 https://github.com/Pelikantapeten/p3-dad-jokes/blob/main/run.py,
 https://hackr.io/blog/python-projects Number Guessing
 """
 
 
-
 import random
-
 
 quote_list = [
     'Life does not end when we die, it ends when we give up',
@@ -22,59 +20,42 @@ quote_list = [
     'Keep your eyes on the stars, and your feet on the ground'
 ]
 
-    
 
 def welcome_quote_of_the_day():
-    """
-    Function to greet and start the game,
-    This part of the code is inspired by 
-    https://github.com/Pelikantapeten/p3-dad-jokes/blob/main/run.py
-    """
     print('Welcome to Quote of the Day!\n')
 
 
 def check_input(user_input):
-    """
-    Function to check if input is valid
-    This part of the code is inspired by
-    https://hackr.io/blog/python-projects Number Guessing 
-
-    """
     inputs_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
     if user_input in inputs_list:
         random_quote = display_random_quote()
-      
         print(random_quote)
-    
+        return True
     else:
         print('Please enter a valid weekday')
-        
+        return False  
+
 
 def display_random_quote():
-    """
-    Function to get a random quote
-    """
     random_quote = random.choice(quote_list)
     return random_quote
 
 
 def game_end():
-    """
-    Function to run when the game ends
-    """
     print('Thank you for playing!')
 
 
 def main():
-    """
-    Function to run the entire program
-    """
     welcome_quote_of_the_day()
-    day_name = input("Enter the name of today: ")
-    check_input(day_name)
+    
+    while True:  
+        day_name = input("Enter the name of today: ")
+        if check_input(day_name):
+            break 
+        
     game_end()
-
+    
 
 if __name__ == "__main__":
     main()
