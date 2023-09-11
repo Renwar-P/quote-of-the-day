@@ -1,9 +1,8 @@
 """
-The code in this project is inspired of the Love Sandwiches project, 
+The code in this project is inspired by the Love Sandwiches project,
 https://github.com/Pelikantapeten/p3-dad-jokes/blob/main/run.py,
 https://hackr.io/blog/python-projects Number Guessing
 """
-
 
 import random
 
@@ -26,7 +25,10 @@ def welcome_quote_of_the_day():
 
 
 def check_input(user_input):
-    inputs_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    inputs_list = [
+        'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
+        'Saturday', 'Sunday'
+    ]
 
     if user_input in inputs_list:
         random_quote = display_random_quote()
@@ -34,7 +36,7 @@ def check_input(user_input):
         return True
     else:
         print('Please enter a valid weekday')
-        return False  
+        return False
 
 
 def display_random_quote():
@@ -48,14 +50,14 @@ def game_end():
 
 def main():
     welcome_quote_of_the_day()
-    
-    while True:  
-        day_name = input("Enter the name of today: ")
+
+    while True:
+        day_name = input("Enter the name of today:\n")
         if check_input(day_name):
-            break 
-        
+            break
+
     game_end()
-    
+
 
 if __name__ == "__main__":
     main()
