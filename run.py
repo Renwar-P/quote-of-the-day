@@ -19,11 +19,15 @@ quote_list = [
     'Keep your eyes on the stars, and your feet on the ground'
 ]
 
-
+"""
+Function to start the game and welcome player
+"""
 def welcome_quote_of_the_day():
     print('Welcome to Quote of the Day!\n')
 
-
+"""
+Function to check if the user input is a weekday
+"""
 def check_input(user_input):
     inputs_list = [
         'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
@@ -38,16 +42,22 @@ def check_input(user_input):
         print('Please enter a valid weekday')
         return False
 
-
+"""
+Function to display a random quote from quote_list
+"""
 def display_random_quote():
     random_quote = random.choice(quote_list)
     return random_quote
 
-
+"""
+Function to end game
+"""
 def game_end():
     print('Thank you for playing!')
 
-
+"""
+Function to call functions, contains a while statement that runs until valid response is given"
+"""
 def main():
     welcome_quote_of_the_day()
 
